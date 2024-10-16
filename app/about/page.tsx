@@ -26,30 +26,33 @@ export default async function AboutPage() {
         {/* Foto 1 */}
         <div className="flex flex-col items-center">
           <Avatar className="h-48 w-48">
-            <AvatarImage src="/avatar.png" alt={siteConfig.author1} />
-            <AvatarFallback>JC</AvatarFallback>
+            <AvatarImage src="/aqila.png" alt={siteConfig.author1} />
+            <AvatarFallback>Aqila</AvatarFallback>
           </Avatar>
-          <p className="text-muted-foreground text-lg py-2">{siteConfig.author1}</p>
+          <h2 className="text-muted-foreground text-lg py-2">{siteConfig.author1}</h2>
+          <p className="text-muted-foreground text-center break-words">5025231138</p>
         </div>
         {/* Foto 2 */}
         <div className="flex flex-col items-center">
           <Avatar className="h-48 w-48">
-            <AvatarImage src="/avatar2.png" alt={siteConfig.author2} />
-            <AvatarFallback>JC</AvatarFallback>
+            <AvatarImage src="/mia.png" alt={siteConfig.author2} />
+            <AvatarFallback>Hikmia</AvatarFallback>
           </Avatar>
-          <p className="text-muted-foreground text-lg py-2">{siteConfig.author2}</p>
+          <h2 className="text-muted-foreground text-lg py-2">{siteConfig.author2}</h2>
+          <p className="text-muted-foreground text-center break-words">5025231147</p>
         </div>
         {/* Foto 3 */}
         <div className="flex flex-col items-center">
           <Avatar className="h-48 w-48">
-            <AvatarImage src="/avatar3.png" alt={siteConfig.author3} />
-            <AvatarFallback>JC</AvatarFallback>
+            <AvatarImage src="/niar.png" alt={siteConfig.author3} />
+            <AvatarFallback>Mazaya</AvatarFallback>
           </Avatar>
-          <p className="text-muted-foreground text-lg py-2">{siteConfig.author3}</p>
+          <h2 className="text-muted-foreground text-lg py-2">{siteConfig.author3}</h2>
+          <p className="text-muted-foreground text-center break-words">5025231150</p>
         </div>
       </div>
       <p className="text-muted-foreground text-lg py-4 text-center">
-      The blog website "MAMdulu" was created by three friends from the Computer Engineering program at the Institut Teknologi Sepuluh Nopember (ITS) in 2023. MAM in "MAMdulu" stands for "Mia, Aqila, and Mazaya" which is an abbreviation of the three creators' names.
+      The blog website "MAMdulu" was created by three friends from the Informatics Engineering program at the Institut Teknologi Sepuluh Nopember (ITS) in 2023. MAM in "MAMdulu" stands for "Mia, Aqila, and Mazaya" which is an abbreviation of the three creators' names.
       This blog was created to help people find food recommendations both inside and outside Surabaya.
       </p>
     </div>
