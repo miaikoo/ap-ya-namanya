@@ -1,3 +1,4 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 
@@ -24,28 +25,28 @@ export default async function AboutPage() {
       <div className="flex flex-wrap justify-center gap-8 mt-6">
         {/* Foto 1 */}
         <div className="flex flex-col items-center">
-          <div className="h-48 w-48">
-            <img src="/aqila.png" alt={siteConfig.author1} />
-            <p>Aqila</p>
-          </div>
+          <Avatar className="h-48 w-48">
+            <AvatarImage src="/aqila.png" alt={siteConfig.author1} />
+            <AvatarFallback>Aqila</AvatarFallback>
+          </Avatar>
           <h2 className="text-muted-foreground text-lg py-2">{siteConfig.author1}</h2>
           <p className="text-muted-foreground text-center break-words">5025231138</p>
         </div>
         {/* Foto 2 */}
         <div className="flex flex-col items-center">
-          <div className="h-48 w-48">
-            <img src="/mia.png" alt={siteConfig.author2} />
-            <p>Hikmia</p>
-          </div>
+          <Avatar className="h-48 w-48">
+            <AvatarImage src="/mia.png" alt={siteConfig.author2} />
+            <AvatarFallback>Hikmia</AvatarFallback>
+          </Avatar>
           <h2 className="text-muted-foreground text-lg py-2">{siteConfig.author2}</h2>
           <p className="text-muted-foreground text-center break-words">5025231147</p>
         </div>
         {/* Foto 3 */}
         <div className="flex flex-col items-center">
-          <div className="h-48 w-48">
-            <img src="/niar.png" alt={siteConfig.author3} />
-            <p>Mazaya</p>
-          </div>
+          <Avatar className="h-48 w-48">
+            <AvatarImage src="/niar.png" alt={siteConfig.author3} />
+            <AvatarFallback>Mazaya</AvatarFallback>
+          </Avatar>
           <h2 className="text-muted-foreground text-lg py-2">{siteConfig.author3}</h2>
           <p className="text-muted-foreground text-center break-words">5025231150</p>
         </div>
