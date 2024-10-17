@@ -10,18 +10,18 @@ interface PostContentProps {
 }
 
 export default function PostContent({ post }: PostContentProps) {
-  const [pageURL, setPageURL] = useState("");
+  const [pageURL, setPageURL] = useState("");   // store current page url
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setPageURL(window.location.href);
+    if (typeof window !== "undefined") {    // check if window object avail
+      setPageURL(window.location.href);     // dynamically updated when the page is loaded
     }
   }, []);
 
   const disqusConfig = {
-    url: pageURL, // Use the dynamically set page URL
-    identifier: post.slug, // The unique identifier for the post
-    title: post.title, // The title of the post
+    url: pageURL,
+    identifier: post.slug,
+    title: post.title,
   };
 
   return (
